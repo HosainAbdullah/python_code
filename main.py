@@ -1,4 +1,4 @@
-from asyncio.windows_events import NULL
+# from asyncio.windows_events import NULL
 # from html import entities
 # from os import abort
 # import queue
@@ -103,6 +103,3 @@ def deleteEmp(empId):
     conn.close()
     if result == 0: return jsonify({'response':'Error'})
     else :  return jsonify({'response':'Success'})
-
-if __name__ == '__main__':
- app.run( debug=True , host='0.0.0.0' ,port=50721)
